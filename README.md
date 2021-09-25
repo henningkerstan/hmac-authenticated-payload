@@ -21,7 +21,7 @@ This framework is available as a Node.js-module. You can thus use Node.js' packa
 
 For using the library in your own application install the package locally by running the following command
 
-    sudo npm i @henningkerstan/hmac-authenticated-payload
+    npm i @henningkerstan/hmac-authenticated-payload
 
 in your project's directory.
 
