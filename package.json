@@ -1,0 +1,69 @@
+{
+  "name": "@henningkerstan/hmac-authenticated-payload",
+  "version": "0.0.0",
+  "description": "A TypeScript wrapper class to authenticate an enclosed object (the 'payload') using a keyed message authentication code.",
+  "main": "./lib/HMACAuthenticatedPayload.js",
+  "types": "./lib/HMACAuthenticatedPayload.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "test": "npx jasmine-ts --config=jasmine.json",
+    "doc": "npx typedoc",
+    "build": "rimraf ./lib/ && npx tsc",
+    "all": "npm run build && npm run build && npm run doc",
+    "lint": "eslint --ignore-path .gitignore --fix src/**/*.ts",
+    "prepublishOnly": "npm run license-checker && npm run build",
+    "version": "node .version.js",
+    "prepare": "husky install",
+    "license-checker": "npx license-checker --summary --production --unknown --onlyAllow \"Apache-2.0;MIT;BSD;ISC\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/henningkerstan/hmac-authenticated-payload.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Henning Kerstan",
+  "license": "Apache-2.0",
+  "keywords": [
+    "HMAC",
+    "MAC",
+    "keyed message authentication code",
+    "message authentication code"
+  ],
+  "dependencies": {
+    "delay": "^5.0.0"
+  },
+  "devDependencies": {
+    "@henningkerstan/eslint-config": "^0.0.3",
+    "@henningkerstan/prettier-config": "^1.0.0",
+    "@types/jasmine": "^3.8.2",
+    "@types/node": "^16.7.1",
+    "@typescript-eslint/eslint-plugin": "^4.29.2",
+    "@typescript-eslint/parser": "^4.29.2",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "husky": "^7.0.1",
+    "jasmine": "^3.8.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "jasmine-ts": "^0.4.0",
+    "license-checker": "^25.0.1",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.2.1",
+    "typedoc": "^0.21.6",
+    "typescript": "^4.3.5"
+  },
+  "prettier": "@henningkerstan/prettier-config",
+  "bugs": {
+    "url": "https://github.com/henningkerstan/hmac-authenticated-payload/issues"
+  },
+  "homepage": "https://github.com/henningkerstan/hmac-authenticated-payload#readme",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  }
+}
