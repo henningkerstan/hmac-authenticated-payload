@@ -33,9 +33,6 @@
     "keyed message authentication code",
     "message authentication code"
   ],
-  "dependencies": {
-    "delay": "^5.0.0"
-  },
   "devDependencies": {
     "@henningkerstan/eslint-config": "^0.0.3",
     "@henningkerstan/prettier-config": "^1.0.0",
