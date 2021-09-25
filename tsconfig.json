@@ -25,6 +25,7 @@
 
   "typedocOptions": {
     "entryPoints": ["./src"],
+    "entryPointStrategy": "expand",
     "out": "./docs",
     "exclude": "./src/Delay.ts",
     "includeVersion": true,
