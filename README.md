@@ -34,7 +34,7 @@ The library also comes with an online [documentation](https://henningkerstan.git
 All functionality is contained in the [HMACAuthenticatedPayload class](https://henningkerstan.github.io/hmac-authenticated-payload/classes/HMACAuthenticatedPayload.HMACAuthenticatedPayload-1.html), hence you only need to import this class. See below for an example usage.
 
 ```typescript
-import { HMACAuthenticatedPayload } from 'hmac-authenticated-payload'
+import { HMACAuthenticatedPayload } from '@henningkerstan/hmac-authenticated-payload'
 
 // for this example we will use a specific key; to create a new key use HMACAuthenticatedPayload.createKey()
 const key = Buffer.from(
