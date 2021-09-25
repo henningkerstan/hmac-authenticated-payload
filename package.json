@@ -1,6 +1,6 @@
 {
   "name": "@henningkerstan/hmac-authenticated-payload",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A TypeScript wrapper class to authenticate an enclosed object (the 'payload') using a keyed message authentication code.",
   "main": "./lib/HMACAuthenticatedPayload.js",
   "types": "./lib/HMACAuthenticatedPayload.d.ts",
